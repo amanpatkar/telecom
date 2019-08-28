@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sign up  </title>
+
+<!-- Font Icon -->
+<link rel="stylesheet"
+	href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main">
+
+		<section class="signup">
+			<!-- <img src="images/signup-bg.jpg" alt=""> -->
+			<div class="container">
+				<div class="signup-content">
+					<form method="GET" id="signup-form" class="signup-form"
+						action="customerRegister">
+						<h2 class="form-title">Customer Registration Form</h2>
+						<div class="form-group">
+							<input type="number" class="form-input" name="tf1" id="id"
+								placeholder="Your ID" required />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-input" name="tf2" id="name"
+								placeholder="Your Name" required />
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-input" name="tf3" id="email"
+								placeholder="Your Email" required />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-input" name="tf4" id="address"
+								placeholder="Your Address" required />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-input" name="tf5" id="password"
+								placeholder="Password" required /> <span toggle="#password"
+								class="zmdi zmdi-eye field-icon toggle-password"></span>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-input" name="tf6"
+								id="re_password" placeholder="Confirm password" required />
+						</div>
+
+						<div class="dropdown">
+							<button class="dropbtn">Select Secret Question</button>
+							<div class="dropdown-content">
+								<select name="tf7">
+									<option value="NickName">What is your Nickname?</option>
+									<option value="School">What was your First School?</option>
+									<option value="Job">What is your Dream Job?</option>
+								</select>
+							</div>
+						</div><br><br>
+						<div class="form-group">
+							<input type="text" name="tf8" class="form-input"
+								placeholder="Security Answer" required><br>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Select Operator</button>
+							<div class="dropdown-content">
+								<select name="tf9">
+									<option value="Vodafone">Vodafone</option>
+									<option value="Airtel">Airtel</option>
+									<option value="Jio">Jio</option>
+								</select>
+								
+							</div>
+						</div><br><br><br><br>
+
+
+						<div class="form-group">
+							<input type="submit" name="submit" id="submit"
+								class="form-submit" value="Sign up" />
+						</div>
+					</form>
+					<p class="loginhere">
+						Have already an account ? <a href="http://localhost:8080/Telecom/CustomerLogin.html" class="loginhere-link">Login
+							here</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- JS -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
